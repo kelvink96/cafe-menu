@@ -1,0 +1,138 @@
+/* Color Theme Swatches in Hex */
+/* Color Theme Swatches in RGBA */
+nav, .navbar {
+  padding: 2em 4em;
+}
+nav a, nav i, nav h3, .navbar a, .navbar i, .navbar h3 {
+  color: #f2e6e1;
+}
+nav .navbar-brand, .navbar .navbar-brand {
+  font-size: 1em;
+}
+nav .navbar-brand i, .navbar .navbar-brand i {
+  margin-right: 0.5em;
+}
+nav .navbar-brand a, .navbar .navbar-brand a {
+  margin-right: 0.5em;
+}
+nav .navbar-brand a i, .navbar .navbar-brand a i {
+  font-size: 1.25em;
+}
+nav .collapse .navbar-nav .nav-item .nav-link, .navbar .collapse .navbar-nav .nav-item .nav-link {
+  text-transform: capitalize;
+}
+
+footer {
+  background-color: #061338;
+  color: #f2e6e1;
+  padding: 0;
+}
+footer .page-footer {
+  padding: 4em 1em;
+}
+footer .page-footer h3, footer .page-footer .text-center {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+footer .page-footer h3 a, footer .page-footer .text-center a {
+  color: #f2e6e1;
+}
+footer .page-footer h3 a i, footer .page-footer .text-center a i {
+  margin-right: 0.5em;
+}
+footer .footer-copyright {
+  background-color: #05051c;
+  padding: 1em;
+}
+footer .footer-copyright h3, footer .footer-copyright p {
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 200ms ease;
+  background-color: #061338;
+}
+.overlay:hover, .overlay:focus {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section {
+  margin: 2em 0;
+}
+
+main .hero-section {
+  margin-top: -12%;
+  height: 80vh;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/breakfast.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-top: 25%;
+  color: #f2e6e1;
+}
+main .menu-section {
+  padding: 2em 5em;
+}
+main .menu-section h4 {
+  padding: 1em;
+  text-transform: capitalize;
+  color: #05051c;
+}
+main .menu-section .list-group {
+  margin: 0.5em 0;
+}
+main .menu-section .list-group .list-group-item-action {
+  border: 1.5px solid transparent;
+  padding: 1em 2em;
+  border-radius: 0.25em;
+  transition: all ease-in-out 150ms;
+  color: #05051c;
+}
+main .menu-section .list-group .list-group-item-action .d-flex p {
+  text-transform: capitalize;
+  margin-bottom: 0;
+  color: #05051c;
+}
+main .menu-section .list-group .list-group-item-action .d-flex p:first-of-type {
+  font-weight: bolder;
+}
+main .menu-section .list-group .list-group-item-action .d-flex p:last-of-type {
+  text-align: right;
+  font-weight: 500;
+}
+main .menu-section .list-group .list-group-item-action .d-flex hr {
+  border-bottom: 2.5px dotted black;
+  border-top: none;
+  width: 40%;
+  padding: 0 1em;
+}
+main .menu-section .list-group .list-group-item-action small {
+  font-style: italic;
+}
+main .menu-section .list-group .list-group-item-action:hover, main .menu-section .list-group .list-group-item-action:focus {
+  border-color: #061338;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=sample-menu.css.map */

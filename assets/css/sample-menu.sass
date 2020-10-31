@@ -1,0 +1,61 @@
+@import "colors"
+@import "navbar"
+@import "footer"
+@import "helpers"
+
+main
+  .hero-section
+    margin-top: -12%
+    height: 80vh
+    background-image: radial-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../images/breakfast.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: bottom
+    padding-top: 25%
+    color: $color-light-cream
+
+  .menu-section
+    padding: 2em 5em
+
+    h4
+      padding: 1em
+      text-transform: capitalize
+      color: $color-darker-blue
+
+    .list-group
+      margin: .5em 0
+
+      .list-group-item-action
+        border: 1.5px solid transparent
+        padding: 1em 2em
+        border-radius: .25em
+        transition: all ease-in-out 150ms
+        color: $color-darker-blue
+
+        .d-flex
+          p
+            text-transform: capitalize
+            margin-bottom: 0
+            color: $color-darker-blue
+
+            &:first-of-type
+              font-weight: bolder
+
+            &:last-of-type
+              text-align: right
+              font-weight: 500
+
+          hr
+            border-bottom: 2.5px dotted black
+            border-top: none
+            width: 40%
+            padding: 0 1em
+
+        small
+          font-style: italic
+
+
+        &:hover,
+        &:focus
+          border-color: $color-dark-blue
+          background-color: transparent
