@@ -57,7 +57,7 @@ footer .footer-copyright h3, footer .footer-copyright p {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 200ms ease;
   background-color: #061338;
 }
 .overlay:hover, .overlay:focus {
@@ -87,7 +87,7 @@ main .hero-section {
   background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/hero-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: center;
+  background-position: center;
   padding-top: 25%;
   color: #f2e6e1;
 }
