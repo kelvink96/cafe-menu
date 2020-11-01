@@ -1,19 +1,21 @@
 html
 	head
 		meta(name='viewport' content='width=device-width, initial-scale=1')
-		title cafe` menu
+		title Cafe` Menu
 		link(href='../assets/vendors/bootstrap/bootstrap.min.css' rel='stylesheet')
 		link(href='../assets/vendors/line-awesome/css/line-awesome.min.css' rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap' rel='stylesheet')
 		script(src='../assets/vendors/jquery/jquery.min.js')
 		script(src='../assets/vendors/bootstrap/bootstrap.bundle.min.js')
+		script(src='../assets/js/index.js')
 		block links
 	body
-		nav.navbar.navbar-expand-lg
+		nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-top
 			a.navbar-brand
 				i.las.la-phone-alt.la-rotate-270
 				| +254 123 932 122
 			.collapse.navbar-collapse
-				.mx-auto
+				.nav-items-wrapper
 					h3.text-center
 						| cafe` menu
 					ul.navbar-nav
@@ -27,11 +29,11 @@ html
 							a.nav-link(href='')
 								| reservation
 			.navbar-brand
-				a(href="")
+				a(href='')
 					i.lab.la-facebook-f
-				a(href="")
+				a(href='')
 					i.lab.la-instagram
-				a(href="")
+				a(href='')
 					i.lab.la-twitter
 		main
 			block content
@@ -46,15 +48,15 @@ html
 					.col-md-4
 						h4 +254 123 932 122
 				h3.text-center
-					a(href="")
+					a(href='')
 						i.lab.la-facebook-f
-					a(href="")
+					a(href='')
 						i.lab.la-instagram
-					a(href="")
+					a(href='')
 						i.lab.la-twitter
-					a(href="")
+					a(href='')
 						i.lab.la-linkedin-in
-					a(href="")
+					a(href='')
 						i.lab.la-youtube
 		.footer-copyright.text-center
 			p Copyright © 2020 Cafe` Menu. All Rights Reserved.

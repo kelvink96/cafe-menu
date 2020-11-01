@@ -2,17 +2,22 @@
 @import "navbar"
 @import "footer"
 @import "helpers"
+@import "buttons"
 
 main
   .hero-section
     margin-top: -12%
-    height: 80vh
+    height: 90vh
     background-image: radial-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url("../images/breakfast.jpg")
     background-size: cover
     background-repeat: no-repeat
     background-position: bottom
-    padding-top: 25%
+    padding: 30% 4em 0 4em
     color: $color-light-cream
+
+    h1
+      text-align: center
+      font-weight: lighter
 
   .menu-section
     padding: 2em 5em
@@ -28,7 +33,7 @@ main
       .list-group-item-action
         border: 1.5px solid transparent
         padding: 1em 2em
-        border-radius: .25em
+        border-radius: 0
         transition: all ease-in-out 150ms
         color: $color-darker-blue
 
