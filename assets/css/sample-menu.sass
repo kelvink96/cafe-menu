@@ -18,6 +18,7 @@ main
     h1
       text-align: center
       font-weight: lighter
+      text-transform: uppercase
 
   .menu-section
     padding: 2em 5em
@@ -64,3 +65,24 @@ main
         &:focus
           border-color: $color-dark-blue
           background-color: transparent
+
+@media only screen and (max-width: 600px)
+  main
+    .hero-section
+      margin-top: 0
+      padding: 2em
+      height: 40vh
+
+      h1
+        margin-top: 2em
+
+    .menu-section
+      padding: 1em
+
+      h4
+        padding: .5em
+        text-align: center
+
+      .card
+        img
+          height: 250px

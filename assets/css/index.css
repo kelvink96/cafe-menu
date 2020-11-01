@@ -37,6 +37,11 @@ html, body {
   margin: 2em 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 1em 0;
+  }
+}
 nav, .navbar {
   padding: 2em 4em;
 }
@@ -46,11 +51,14 @@ nav a, nav i, nav h3, .navbar a, .navbar i, .navbar h3 {
 nav h3, .navbar h3 {
   font-weight: lighter;
 }
+nav .on-small, .navbar .on-small {
+  display: none;
+}
 nav .navbar-brand, .navbar .navbar-brand {
   font-size: 1em;
 }
 nav .navbar-brand i, .navbar .navbar-brand i {
-  margin-right: 0.5em;
+  margin: auto;
 }
 nav .navbar-brand a, .navbar .navbar-brand a {
   margin-right: 0.5em;
@@ -83,6 +91,44 @@ nav .collapse .nav-items-wrapper .navbar-nav .nav-item .nav-link:hover, nav .col
   box-shadow: 0px 3px 3px 0px rgba(25, 25, 25, 0.6);
 }
 
+@media only screen and (max-width: 600px) {
+  nav, .navbar {
+    position: relative;
+    padding: 1em 2em;
+    background-color: #05051c;
+  }
+  nav .on-small, .navbar .on-small {
+    display: block;
+  }
+  nav .on-med-up, .navbar .on-med-up {
+    display: none;
+  }
+  nav .navbar-brand, .navbar .navbar-brand {
+    text-align: center;
+    width: 100%;
+  }
+  nav .navbar-toggler, nav .navbar-brand, .navbar .navbar-toggler, .navbar .navbar-brand {
+    margin: 0.5em auto;
+  }
+  nav .navbar-toggler, .navbar .navbar-toggler {
+    text-align: center;
+    background-color: #f2e6e1;
+    border-radius: 0;
+  }
+  nav .navbar-toggler i, .navbar .navbar-toggler i {
+    font-size: 1.25em;
+    color: #05051c;
+  }
+  nav .collapse, .navbar .collapse {
+    background-color: #061338;
+  }
+  nav .collapse .nav-items-wrapper, .navbar .collapse .nav-items-wrapper {
+    margin-right: auto;
+  }
+  nav .collapse .nav-items-wrapper .navbar-nav .nav-item .nav-link, .navbar .collapse .nav-items-wrapper .navbar-nav .nav-item .nav-link {
+    font-size: 1.2em;
+  }
+}
 footer {
   background-color: #061338;
   color: #f2e6e1;
@@ -110,6 +156,13 @@ footer .footer-copyright {
 }
 footer .footer-copyright h3, footer .footer-copyright p {
   margin: 0;
+}
+
+footer .page-footer {
+  padding: 2em;
+}
+footer .page-footer h4, footer .page-footer .text-center {
+  margin: 0.5em 0;
 }
 
 html, body {
@@ -149,6 +202,11 @@ html, body {
   margin: 2em 0;
 }
 
+@media only screen and (max-width: 600px) {
+  .section {
+    margin: 1em 0;
+  }
+}
 main .hero-section {
   margin-top: -12%;
   height: 90vh;
@@ -161,6 +219,8 @@ main .hero-section {
 }
 main .hero-section h1 {
   font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #969696;
 }
 main .menu-section .card {
   margin-bottom: 2em;
@@ -172,6 +232,23 @@ main .menu-section .card img {
 }
 main .menu-section .card .text h4 {
   font-weight: lighter;
+}
+
+@media only screen and (max-width: 600px) {
+  main .hero-section {
+    margin-top: 0;
+    padding: 2em;
+    height: 40vh;
+  }
+  main .hero-section h1 {
+    margin-top: 2em;
+  }
+  main .menu-section {
+    padding: 1em;
+  }
+  main .menu-section .card img {
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

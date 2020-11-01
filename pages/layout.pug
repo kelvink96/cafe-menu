@@ -12,11 +12,21 @@ html
 	body
 		nav.navbar.navbar-expand-lg.fixed-top.navbar-fixed-top
 			a.navbar-brand
+				h2 cafe` menu
 				i.las.la-phone-alt.la-rotate-270
 				| +254 123 932 122
-			.collapse.navbar-collapse
+			.navbar-brand.on-small
+				a(href='')
+					i.lab.la-facebook-f
+				a(href='')
+					i.lab.la-instagram
+				a(href='')
+					i.lab.la-twitter
+			button.navbar-toggler(type='button' data-toggle='collapse' data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+				i.las.la-bars
+			.collapse.navbar-collapse#navbarSupportedContent
 				.nav-items-wrapper
-					h3.text-center
+					h3.text-center.on-med-up
 						| cafe` menu
 					ul.navbar-nav
 						li.nav-item
@@ -28,7 +38,7 @@ html
 						li.nav-item
 							a.nav-link(href='')
 								| reservation
-			.navbar-brand
+			.navbar-brand.on-med-up
 				a(href='')
 					i.lab.la-facebook-f
 				a(href='')
