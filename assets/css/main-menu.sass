@@ -24,16 +24,31 @@ main
     padding: 2em 5em
 
     h4
-      padding: 1em
-      text-transform: capitalize
+      padding: 0.5em 1em
+      text-transform: uppercase
       color: $color-darker-blue
 
+    .sub-title
+      font-size: .8em
+      padding-left: 2em
+      font-weight: normal
+
     .list-group
-      margin: .5em 0
+      margin: 1em 0
+      padding: 1em
+      border-bottom: 1px solid $color-dark-cream
+      border-radius: 0
+
+      .border-0
+        p
+          width: 33.33%
+          text-align: right
+          font-weight: bold
+          margin: 0
 
       .list-group-item-action
         border: 1.5px solid transparent
-        padding: 1em 2em
+        padding: 1em 1.5em
         border-radius: 0
         transition: all ease-in-out 150ms
         color: $color-darker-blue
@@ -43,9 +58,13 @@ main
             text-transform: capitalize
             margin-bottom: 0
             color: $color-darker-blue
+            width: 33.33%
 
             &:first-of-type
               font-weight: bolder
+
+            &:nth-of-type(2)
+              text-align: right
 
             &:last-of-type
               text-align: right
@@ -59,7 +78,6 @@ main
 
         small
           font-style: italic
-
 
         &:hover,
         &:focus
@@ -86,3 +104,6 @@ main
       .card
         img
           height: 250px
+
+      .list-group
+        padding: 0

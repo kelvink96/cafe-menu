@@ -243,16 +243,30 @@ main .menu-section {
   padding: 2em 5em;
 }
 main .menu-section h4 {
-  padding: 1em;
-  text-transform: capitalize;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
   color: #05051c;
 }
+main .menu-section .sub-title {
+  font-size: 0.8em;
+  padding-left: 2em;
+  font-weight: normal;
+}
 main .menu-section .list-group {
-  margin: 0.5em 0;
+  margin: 1em 0;
+  padding: 1em;
+  border-bottom: 1px solid #ccbdb9;
+  border-radius: 0;
+}
+main .menu-section .list-group .border-0 p {
+  width: 33.33%;
+  text-align: right;
+  font-weight: bold;
+  margin: 0;
 }
 main .menu-section .list-group .list-group-item-action {
   border: 1.5px solid transparent;
-  padding: 1em 2em;
+  padding: 1em 1.5em;
   border-radius: 0;
   transition: all ease-in-out 150ms;
   color: #05051c;
@@ -261,9 +275,13 @@ main .menu-section .list-group .list-group-item-action .d-flex p {
   text-transform: capitalize;
   margin-bottom: 0;
   color: #05051c;
+  width: 33.33%;
 }
 main .menu-section .list-group .list-group-item-action .d-flex p:first-of-type {
   font-weight: bolder;
+}
+main .menu-section .list-group .list-group-item-action .d-flex p:nth-of-type(2) {
+  text-align: right;
 }
 main .menu-section .list-group .list-group-item-action .d-flex p:last-of-type {
   text-align: right;
@@ -302,6 +320,9 @@ main .menu-section .list-group .list-group-item-action:hover, main .menu-section
   main .menu-section .card img {
     height: 250px;
   }
+  main .menu-section .list-group {
+    padding: 0;
+  }
 }
 
-/*# sourceMappingURL=sample-menu.css.map */
+/*# sourceMappingURL=main-menu.css.map */
