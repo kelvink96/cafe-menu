@@ -247,7 +247,10 @@ main .menu-section .card .text h4 {
     margin-top: 2em;
   }
   main .menu-section {
-    padding: 1em;
+    padding: 0em;
+  }
+  main .menu-section .card {
+    margin-bottom: 1em;
   }
   main .menu-section .card img {
     height: 250px;
